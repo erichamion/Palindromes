@@ -1,0 +1,12 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\PalindromeCommonTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\PalindromeCommonTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\Castle.Core.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\Moq.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\PalindromeCommon.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\Castle.Core.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\bin\Debug\Moq.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\obj\Debug\PalindromeCommonTests.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\obj\Debug\PalindromeCommonTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommonTests\obj\Debug\PalindromeCommonTests.pdb

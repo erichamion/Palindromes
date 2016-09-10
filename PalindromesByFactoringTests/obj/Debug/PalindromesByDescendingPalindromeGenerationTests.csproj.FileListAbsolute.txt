@@ -1,0 +1,16 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromesByFactoringTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromesByFactoringTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromesByDescendingPalindromeGeneration.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromesByDescendingPalindromeGeneration.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\obj\Debug\PalindromesByDescendingPalindromeGenerationTests.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\obj\Debug\PalindromesByFactoringTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\obj\Debug\PalindromesByFactoringTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromeCommon.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromeCommonTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\Moq.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\Castle.Core.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\PalindromeCommonTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\Moq.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoringTests\bin\Debug\Castle.Core.xml

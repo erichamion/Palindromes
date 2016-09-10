@@ -1,0 +1,12 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Palindromes.exe.config
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Palindromes.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Palindromes.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\Palindromes.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\Palindromes.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Castle.Core.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Moq.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Castle.Core.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\Moq.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\bin\Debug\PalindromeCommon.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\Palindromes.csprojResolveAssemblyReference.cache

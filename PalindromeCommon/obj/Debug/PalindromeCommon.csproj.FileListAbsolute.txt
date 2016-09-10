@@ -1,0 +1,5 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon\bin\Debug\PalindromeCommon.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon\obj\Debug\PalindromeCommon.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon\obj\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon\obj\Debug\PalindromeCommon.pdb

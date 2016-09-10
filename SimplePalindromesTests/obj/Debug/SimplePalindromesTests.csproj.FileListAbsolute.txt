@@ -1,0 +1,16 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\SimplePalindromesTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\SimplePalindromesTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\SimplePalindromes.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\SimplePalindromes.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\obj\Debug\SimplePalindromesTests.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\obj\Debug\SimplePalindromesTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\obj\Debug\SimplePalindromesTests.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\Castle.Core.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\Moq.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\Castle.Core.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\Moq.xml
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\PalindromeCommon.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\PalindromeCommonTests.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromesTests\bin\Debug\PalindromeCommonTests.pdb

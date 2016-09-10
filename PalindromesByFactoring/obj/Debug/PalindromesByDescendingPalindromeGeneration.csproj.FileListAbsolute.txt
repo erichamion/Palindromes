@@ -1,0 +1,8 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.exe.config
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromesByFactoring\bin\Debug\PalindromeCommon.pdb

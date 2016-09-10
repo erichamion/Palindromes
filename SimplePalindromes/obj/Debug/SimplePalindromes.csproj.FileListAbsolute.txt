@@ -1,0 +1,8 @@
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\obj\Debug\SimplePalindromes.csprojResolveAssemblyReference.cache
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\SimplePalindromes.exe.config
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\SimplePalindromes.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\SimplePalindromes.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\obj\Debug\SimplePalindromes.exe
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\obj\Debug\SimplePalindromes.pdb
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\PalindromeCommon.dll
+c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\PalindromeCommon.pdb
