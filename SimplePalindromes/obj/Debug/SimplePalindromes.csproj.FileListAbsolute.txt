@@ -6,3 +6,6 @@ c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Simple
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\obj\Debug\SimplePalindromes.pdb
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\PalindromeCommon.dll
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\SimplePalindromes\bin\Debug\PalindromeCommon.pdb
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\SimplePalindromes\bin\Debug\SimplePalindromes.exe.config
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\SimplePalindromes\obj\Debug\SimplePalindromes.exe
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\SimplePalindromes\obj\Debug\SimplePalindromes.pdb
