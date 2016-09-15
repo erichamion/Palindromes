@@ -9,49 +9,66 @@ namespace PalindromeCommon
 {
     public class PalindromeUI
     {
-        //public delegate AbstractValueSupplier<long> ValueSupplierCreator(int numDigits);
-        
-
-        //private readonly IValueFinderFactory _finderFactory;
-        //private readonly ISingleParameterValueSupplierFactory _supplierFactory;
-        private readonly IValueFinderFactory _finderFactory;
+        private readonly Tuple<String, IValueFinderFactory>[] _strategies;
 
 
         
-        public PalindromeUI(IValueFinderFactory finderFactory)
+        public PalindromeUI(IValueFinderFactory finderFactory) : 
+            this(new Tuple<String, IValueFinderFactory>[] { new Tuple<string, IValueFinderFactory>("Default strategy", finderFactory) })
+        { }
+
+        public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies)
         {
-            //_finderFactory = finderFactory;
-            //_supplierCreator = supplierCreator;
-            _finderFactory = finderFactory;
+            _strategies = strategies;
         }
 
         public void RunUI()
         {
             int digits;
+            int strategyIndex;
             do
             {
-                digits = -1;
                 bool isValid;
                 do
                 {
-                    Console.WriteLine("How many digits are each factor (0 to quit)?");
-                    Console.Write(" > ");
-                    isValid = int.TryParse(Console.ReadLine(), out digits);
-                    if (!isValid || digits < 0)
+                    Console.WriteLine("Please choose a strategy:");
+                    Console.WriteLine("  0: Quit");
+                    for (int i = 0; i < _strategies.Length; i++)
                     {
-                        Console.WriteLine("Please enter an integer between 1 and 9, inclusive, or 0 to quit.\n");
+                        Console.WriteLine("  {0}: {1}", i + 1, _strategies[i].Item1);
                     }
-                } while (!isValid || digits < 0);
+                    Console.Write(" > ");
+                    isValid = int.TryParse(Console.ReadLine(), out strategyIndex);
+                    strategyIndex--;
+                    if (!isValid || strategyIndex < -1 || strategyIndex >= _strategies.Length)
+                    {
+                        Console.WriteLine("Please enter a number in the given range.\n");
+                    }
+                } while (!isValid || strategyIndex < -1 || strategyIndex >= _strategies.Length);
 
-                if (digits > 0)
+                if (strategyIndex >= 0)
                 {
-                    IValueFinder finder = _finderFactory.CreateValueFinder(digits);
+
+                    digits = -1;
+                    do
+                    {
+                        Console.WriteLine("How many digits are each factor?");
+                        Console.Write(" > ");
+                        isValid = int.TryParse(Console.ReadLine(), out digits);
+                        if (!isValid || digits <= 0)
+                        {
+                            Console.WriteLine("Please enter an integer between 1 and 9, inclusive.\n");
+                        }
+                    } while (!isValid || digits <= 0);
+
+                    IValueFinder finder = _strategies[strategyIndex].Item2.CreateValueFinder(digits);
                     Console.WriteLine(finder.FindValue());
                     Console.WriteLine("Press a key...");
                     Console.ReadKey(true);
                     Console.WriteLine();
+                    
                 }
-            } while (digits != 0);
+            } while (strategyIndex >= 0);
         }
     }
 }
