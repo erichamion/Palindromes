@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,7 +48,7 @@
     <Compile Include="DescendingMultiples\BestIndexFinder.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\IBestIndexFinder.cs" />
-    <Compile Include="DescendingMultiples\Program.cs" />
+    <Compile Include="DescendingMultiples\DescendingMultipleValueFinderFactory.cs" />
     <Compile Include="DigitManipulator.cs" />
     <Compile Include="FirstValidValueFinder.cs" />
     <Compile Include="IDigitManipulator.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueEnumerator.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

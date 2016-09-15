@@ -3,8 +3,7 @@ c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palind
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon2\obj\Debug\PalindromeCommon.dll
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon2\obj\Debug\PalindromeCommon.pdb
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\PalindromeCommon2\obj\Debug\PalindromeCommon.csprojResolveAssemblyReference.cache
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\obj\Debug\PalindromeCommon.pdb
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\bin\Debug\PalindromeCommon.exe
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\bin\Debug\PalindromeCommon.pdb
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\obj\Debug\PalindromeCommon.csprojResolveAssemblyReference.cache
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\obj\Debug\PalindromeCommon.exe
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommon2\obj\Debug\PalindromeCommon.pdb

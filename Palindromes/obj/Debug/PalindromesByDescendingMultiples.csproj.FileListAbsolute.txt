@@ -10,3 +10,15 @@ c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palind
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\PalindromesByDescendingMultiples.csprojResolveAssemblyReference.cache
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\Palindromes.exe
 c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palindromes\obj\Debug\Palindromes.pdb
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Palindromes.exe.config
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Palindromes.exe
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Palindromes.pdb
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Castle.Core.dll
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Moq.dll
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\PalindromeCommon.exe
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\PalindromeCommon.pdb
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Castle.Core.xml
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\bin\Debug\Moq.xml
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\obj\Debug\PalindromesByDescendingMultiples.csprojResolveAssemblyReference.cache
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\obj\Debug\Palindromes.exe
+C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\Palindromes\obj\Debug\Palindromes.pdb

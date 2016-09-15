@@ -13,12 +13,6 @@ namespace Palindromes.DescendingMultiples
             x => new FirstValidValueFinder(new DescendingMultipleSupplier(x), new PalindromeChecker());
 
         
-
-        public void Run()
-        {
-            new PalindromeUI(this).RunUI();
-        }
-
         
     }
 }

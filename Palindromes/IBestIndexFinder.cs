@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿//using System.Collections.Generic;
 
-namespace Palindromes
-{
-    public interface IBestIndexFinder<T>
-    {
-        int FindIndex(IEnumerable<T> list);
-    }
-}
+//namespace Palindromes
+//{
+//    public interface IBestIndexFinder<T>
+//    {
+//        int FindIndex(IEnumerable<T> list);
+//    }
+//}

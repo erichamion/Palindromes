@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromesByDescendingMultiples", "Palindromes\PalindromesByDescendingMultiples.csproj", "{2707A216-E34A-4FC5-9A32-2265096ED4FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromesByDescendingMultiplesTests", "PalindromesTests\PalindromesByDescendingMultiplesTests.csproj", "{C576AFB7-DD00-4326-991D-64B68B3CC2CD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePalindromes", "SimplePalindromes\SimplePalindromes.csproj", "{2511B33E-AD5E-4089-8BC0-832B42C44D17}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePalindromesTests", "SimplePalindromesTests\SimplePalindromesTests.csproj", "{61F2E453-5CCD-46D1-92B2-99BF374ED9EE}"
@@ -25,14 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2707A216-E34A-4FC5-9A32-2265096ED4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2707A216-E34A-4FC5-9A32-2265096ED4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2707A216-E34A-4FC5-9A32-2265096ED4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2707A216-E34A-4FC5-9A32-2265096ED4FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C576AFB7-DD00-4326-991D-64B68B3CC2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C576AFB7-DD00-4326-991D-64B68B3CC2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C576AFB7-DD00-4326-991D-64B68B3CC2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C576AFB7-DD00-4326-991D-64B68B3CC2CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2511B33E-AD5E-4089-8BC0-832B42C44D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2511B33E-AD5E-4089-8BC0-832B42C44D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2511B33E-AD5E-4089-8BC0-832B42C44D17}.Release|Any CPU.ActiveCfg = Release|Any CPU

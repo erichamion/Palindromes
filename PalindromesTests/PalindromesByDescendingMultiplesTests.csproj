@@ -74,10 +74,6 @@
       <Project>{1aaf69ad-2474-49cd-98b4-3b0158379afa}</Project>
       <Name>PalindromeCommonTests</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Palindromes\PalindromesByDescendingMultiples.csproj">
-      <Project>{2707A216-E34A-4FC5-9A32-2265096ED4FD}</Project>
-      <Name>PalindromesByDescendingMultiples</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
