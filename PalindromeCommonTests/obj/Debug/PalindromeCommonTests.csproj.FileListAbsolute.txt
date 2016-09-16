@@ -13,7 +13,6 @@ c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palind
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\PalindromeCommonTests.dll
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\PalindromeCommonTests.pdb
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\Castle.Core.dll
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\Moq.dll
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\PalindromeCommon.exe
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromeCommonTests\bin\Debug\PalindromeCommon.pdb

@@ -52,6 +52,8 @@
     <Compile Include="DigitManipulator.cs" />
     <Compile Include="FirstValidValueFinder.cs" />
     <Compile Include="IDigitManipulator.cs" />
+    <Compile Include="Io\IUserOptionChooser.cs" />
+    <Compile Include="Io\UserOptionChooser.cs" />
     <Compile Include="IValueChecker.cs" />
     <Compile Include="IValueFinder.cs" />
     <Compile Include="IValueFinderFactory.cs" />
