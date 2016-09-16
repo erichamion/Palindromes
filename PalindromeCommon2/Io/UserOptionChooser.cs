@@ -29,24 +29,27 @@ namespace Palindromes.Io
 
         public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList, int firstOptionNumber)
         {
+            _writer.WriteLine(prePrompt);
+            for (int i = 0; i < optionList.Count(); i++)
+            {
+                // Add the starting number to the index for display
+                _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1));
+            }
+
             int chosenIndex;
             do
-            {
-                _writer.WriteLine(prePrompt);
-                for (int i = 0; i < optionList.Count(); i++)
-                {
-                    // Add the starting number to the index for display
-                    _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1));
-                }
+            { 
                 chosenIndex = _reader.GetInt();
                 
                 // Subtract the starting number to convert from displayed number to index
                 chosenIndex -= firstOptionNumber;
                 if (chosenIndex < 0 || chosenIndex >= optionList.Count())
                 {
-                    _writer.WriteLine(_errorMsg + "\n");
+                    _writer.WriteLine(_errorMsg);
                 }
             } while (chosenIndex < 0 || chosenIndex >= optionList.Count());
+
+            _writer.WriteLine("");
 
             return optionList[chosenIndex].Item2;
         }
