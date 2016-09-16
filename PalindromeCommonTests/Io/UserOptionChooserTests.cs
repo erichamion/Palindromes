@@ -30,7 +30,7 @@ namespace Palindromes.Io.Tests
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
             mockInputReader.Setup(x => x.GetInt(1, data.Length)).Returns(index + 1);
 
-            var target = new UserOptionChooser("", "", mockOutputWriter.Object, mockInputReader.Object);
+            var target = new UserOptionChooser(mockOutputWriter.Object, mockInputReader.Object);
 
             // Act
             actual = target.GetOptionFromUser("", data);
@@ -64,7 +64,7 @@ namespace Palindromes.Io.Tests
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
             mockInputReader.Setup(x => x.GetInt(startingOptionNumber, startingOptionNumber + data.Length - 1)).Returns(index + startingOptionNumber);
 
-            var target = new UserOptionChooser("", "", mockOutputWriter.Object, mockInputReader.Object);          
+            var target = new UserOptionChooser(mockOutputWriter.Object, mockInputReader.Object);          
 
             // Act
             actual = target.GetOptionFromUser("", data, startingOptionNumber);

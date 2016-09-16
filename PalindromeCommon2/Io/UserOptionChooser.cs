@@ -12,14 +12,11 @@ namespace Palindromes.Io
 
         private readonly IOutputWriter _writer;
         private readonly IIntegerReader _reader;
-        private readonly String _errorMsg;
 
-        public UserOptionChooser(String linePrompt, String errorMsg, IOutputWriter writer = null, IIntegerReader reader = null)
+        public UserOptionChooser(IOutputWriter writer, IIntegerReader reader)
         {
-            _errorMsg = errorMsg;
-
-            _writer = (writer != null) ? writer : new ConsoleWriter();
-            _reader = (reader != null) ? reader : new ConsoleReaderWithPrompt(linePrompt, _errorMsg, _writer);
+            _writer = writer;
+            _reader = reader;
         }
 
         public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList)
