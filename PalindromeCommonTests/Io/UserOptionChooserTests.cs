@@ -28,7 +28,7 @@ namespace Palindromes.Io.Tests
             var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
-            mockInputReader.Setup(x => x.GetInt()).Returns(index + 1);
+            mockInputReader.Setup(x => x.GetInt(1, data.Length)).Returns(index + 1);
 
             var target = new UserOptionChooser("", "", mockOutputWriter.Object, mockInputReader.Object);
 
@@ -37,7 +37,7 @@ namespace Palindromes.Io.Tests
 
             // Assert
             mockOutputWriter.Verify(x => x.WriteLine(It.IsAny<String>()), Times.AtLeast(data.Length));
-            mockInputReader.Verify(x => x.GetInt(), Times.Once);
+            mockInputReader.Verify(x => x.GetInt(1, data.Length), Times.Once);
             Assert.AreSame(expected, actual);
         }
 
@@ -55,14 +55,14 @@ namespace Palindromes.Io.Tests
                 new Tuple<String, String>("e", "Option 5"),
             };
             var index = 2;
-            var startingOptionNumber = 0;
+            var startingOptionNumber = 27;
             var expected = data[index].Item2;
             String actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
             var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
-            mockInputReader.Setup(x => x.GetInt()).Returns(index + startingOptionNumber);
+            mockInputReader.Setup(x => x.GetInt(startingOptionNumber, startingOptionNumber + data.Length - 1)).Returns(index + startingOptionNumber);
 
             var target = new UserOptionChooser("", "", mockOutputWriter.Object, mockInputReader.Object);          
 
@@ -71,45 +71,11 @@ namespace Palindromes.Io.Tests
 
             // Assert
             mockOutputWriter.Verify(x => x.WriteLine(It.IsAny<String>()), Times.AtLeast(data.Length));
-            mockInputReader.Verify(x => x.GetInt(), Times.Once);
+            mockInputReader.Verify(x => x.GetInt(startingOptionNumber, startingOptionNumber + data.Length - 1), Times.Once);
             Assert.AreSame(expected, actual);
         }
 
 
-        [TestMethod]
-        public void GetOptionFromUserTest_WithBadInputs()
-        {
-            // Arrange
-            var data = new Tuple<String, String>[]
-            {
-                new Tuple<String, String>("a", "Option 1"),
-                new Tuple<String, String>("b", "Option 2"),
-                new Tuple<String, String>("c", "Option 3"),
-                new Tuple<String, String>("d", "Option 4"),
-                new Tuple<String, String>("e", "Option 5"),
-            };
-            var startingOptionNumber = 3;
-            var index = 2;
-            var inputNumbers = new int[] { 2, startingOptionNumber + data.Length, -1, 100, 0, index + startingOptionNumber};
-            var inputStr = String.Join("\n", inputNumbers) + "\n";
-            var expected = data[index].Item2;
-            String actual;
-            var mockOutputWriter = new Mock<IOutputWriter>();
-            var mockInputReader = new Mock<IIntegerReader>();
-            mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
-            mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
-            var timesCalled = 0;
-            mockInputReader.Setup(x => x.GetInt()).Returns(() => inputNumbers[timesCalled++]);
-
-            var target = new UserOptionChooser("", "", mockOutputWriter.Object, mockInputReader.Object);
-            
-            // Act
-            actual = target.GetOptionFromUser("", data, startingOptionNumber);
-
-            // Assert
-            mockOutputWriter.Verify(x => x.WriteLine(It.IsAny<String>()), Times.AtLeast(data.Length));
-            mockInputReader.Verify(x => x.GetInt(), Times.Exactly(inputNumbers.Length));
-            Assert.AreSame(expected, actual);
-        }
+        
     }
 }

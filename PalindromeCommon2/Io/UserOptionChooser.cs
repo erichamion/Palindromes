@@ -29,6 +29,9 @@ namespace Palindromes.Io
 
         public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList, int firstOptionNumber)
         {
+            int userMinOption = firstOptionNumber;
+            int userMaxOption = firstOptionNumber + optionList.Count - 1;
+
             _writer.WriteLine(prePrompt);
             for (int i = 0; i < optionList.Count(); i++)
             {
@@ -36,19 +39,9 @@ namespace Palindromes.Io
                 _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1));
             }
 
-            int chosenIndex;
-            do
-            { 
-                chosenIndex = _reader.GetInt();
-                
-                // Subtract the starting number to convert from displayed number to index
-                chosenIndex -= firstOptionNumber;
-                if (chosenIndex < 0 || chosenIndex >= optionList.Count())
-                {
-                    _writer.WriteLine(_errorMsg);
-                }
-            } while (chosenIndex < 0 || chosenIndex >= optionList.Count());
-
+            int userSelection = _reader.GetInt(userMinOption, userMaxOption);
+            int chosenIndex = userSelection - firstOptionNumber;
+            
             _writer.WriteLine("");
 
             return optionList[chosenIndex].Item2;
