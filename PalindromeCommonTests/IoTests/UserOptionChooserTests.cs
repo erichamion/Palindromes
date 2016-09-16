@@ -56,17 +56,18 @@ namespace Palindromes.Io.Tests
                 new Tuple<String, String>("e", "Option 5"),
             };
             var index = 2;
+            var startingOptionNumber = 0;
             var expected = data[index].Item2;
             String actual;
             var target = new UserOptionChooser();
 
-            using (StringReader reader = new StringReader(index.ToString() + "\n"))
+            using (StringReader reader = new StringReader((index + startingOptionNumber).ToString() + "\n"))
             {
                 Console.SetIn(reader);
 
 
                 // Act
-                actual = target.GetOptionFromUser("", data, "", 0);
+                actual = target.GetOptionFromUser("", data, "", startingOptionNumber);
 
             }
             // Assert
@@ -92,7 +93,7 @@ namespace Palindromes.Io.Tests
             };
             var startingOptionNumber = 3;
             var index = 2;
-            var inputNumbers = new int[] { 2, 7, -1, 100, 0, index + startingOptionNumber};
+            var inputNumbers = new int[] { 2, startingOptionNumber + data.Length, -1, 100, 0, index + startingOptionNumber};
             var inputStr = String.Join("\n", inputNumbers) + "\n";
             var expected = data[index].Item2;
             String actual;
@@ -104,7 +105,7 @@ namespace Palindromes.Io.Tests
 
 
                 // Act
-                actual = target.GetOptionFromUser("", data, "", 0);
+                actual = target.GetOptionFromUser("", data, "", startingOptionNumber);
 
             }
             // Assert

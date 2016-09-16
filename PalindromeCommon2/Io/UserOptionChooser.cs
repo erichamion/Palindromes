@@ -24,16 +24,19 @@ namespace Palindromes.Io
                 Console.WriteLine(prePrompt);
                 for (int i = 0; i < optionList.Count(); i++)
                 {
-                    Console.WriteLine("  {0}: {1}", i, optionList[i].Item1);
+                    // Add the starting number to the index for display
+                    Console.WriteLine("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1);
                 }
                 Console.Write(" > ");
                 isValid = int.TryParse(Console.ReadLine(), out chosenIndex);
+
+                // Subtract the starting number to convert from displayed number to index
                 chosenIndex -= firstOptionNumber;
-                if (!isValid || chosenIndex < -1 || chosenIndex >= optionList.Count())
+                if (!isValid || chosenIndex < 0 || chosenIndex >= optionList.Count())
                 {
                     Console.WriteLine(errorMsg + "\n");
                 }
-            } while (!isValid || chosenIndex < -1 || chosenIndex >= optionList.Count());
+            } while (!isValid || chosenIndex < 0 || chosenIndex >= optionList.Count());
 
             return optionList[chosenIndex].Item2;
         }
