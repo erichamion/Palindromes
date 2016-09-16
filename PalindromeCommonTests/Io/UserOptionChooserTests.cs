@@ -25,7 +25,7 @@ namespace Palindromes.Io.Tests
             var expected = data[index].Item2;
             String actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
-            var mockInputReader = new Mock<IInputReader>();
+            var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
             mockInputReader.Setup(x => x.GetInt()).Returns(index + 1);
@@ -59,7 +59,7 @@ namespace Palindromes.Io.Tests
             var expected = data[index].Item2;
             String actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
-            var mockInputReader = new Mock<IInputReader>();
+            var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
             mockInputReader.Setup(x => x.GetInt()).Returns(index + startingOptionNumber);
@@ -95,7 +95,7 @@ namespace Palindromes.Io.Tests
             var expected = data[index].Item2;
             String actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
-            var mockInputReader = new Mock<IInputReader>();
+            var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
             mockOutputWriter.Setup(x => x.WriteLine(It.IsAny<String>()));
             var timesCalled = 0;

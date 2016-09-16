@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Palindromes.Io
 {
-    public class ConsoleReaderWithPrompt : IInputReader
+    public class ConsoleReaderWithPrompt : IIntegerReader
     {
         private readonly String _prompt;
         private readonly String _invalidIntMessage;
@@ -21,24 +21,34 @@ namespace Palindromes.Io
 
         public int GetInt()
         {
+            return GetInt(int.MinValue, int.MaxValue);
+        }
+
+        public int GetInt(int min, int max)
+        {
+            int effectiveMin = Math.Min(min, max);
+            int effectiveMax = Math.Max(min, max);
+
             int result;
             bool isValid;
             do
             {
                 isValid = int.TryParse(GetString(), out result);
-                if (!isValid)
+                if (!isValid || result < effectiveMin || result > effectiveMax)
                 {
                     _writer.WriteLine(_invalidIntMessage);
                 }
-            } while (!isValid);
+            } while (!isValid || result < effectiveMin || result > effectiveMax);
 
             return result;
         }
 
-        public string GetString()
+        private string GetString()
         {
             _writer.Write(_prompt);
             return Console.ReadLine();
         }
+
+
     }
 }

@@ -14,7 +14,7 @@ namespace Palindromes.Io.Tests
     public class ConsoleReaderWithPromptTests
     {
         [TestMethod()]
-        public void GetIntTest_ValidInput()
+        public void GetIntTest_NoParamsValidInput()
         {
             // Arrange
             var expected = 27;
@@ -44,7 +44,7 @@ namespace Palindromes.Io.Tests
         }
 
         [TestMethod()]
-        public void GetIntTest_InvalidInput()
+        public void GetIntTest_NoParamsInvalidInput()
         {
             // Arrange
             var expected = 27;
@@ -84,28 +84,160 @@ namespace Palindromes.Io.Tests
         }
 
         [TestMethod()]
-        public void GetStringTest()
+        public void GetIntTest_WithParams()
         {
             // Arrange
-            var expected = "I am a string";
-            String actual;
+            var expected = -2;
+            var min = -4;
+            var max = -1;
+            var data = new int[]
+            {
+                -5,
+                0,
+                74,
+                expected,
+            };
+            int actual;
             var prompt = " > ";
+            var invalidMessage = "foo";
             var mockOutputWriter = new Mock<IOutputWriter>();
             mockOutputWriter.Setup(x => x.Write(prompt));
-            var target = new ConsoleReaderWithPrompt(prompt, "", mockOutputWriter.Object);
+            mockOutputWriter.Setup(x => x.WriteLine(invalidMessage));
+            var target = new ConsoleReaderWithPrompt(prompt, invalidMessage, mockOutputWriter.Object);
 
-            using (var reader = new StringReader(expected + "\n"))
+            using (var reader = new StringReader(String.Join("\n", data) + "\n"))
             {
                 Console.SetIn(reader);
 
 
                 // Act
-                actual = target.GetString();
+                actual = target.GetInt(min, max);
 
             }
 
             // Assert
-            mockOutputWriter.Verify(x => x.Write(prompt), Times.Once);
+            mockOutputWriter.Verify(x => x.Write(prompt), Times.Exactly(data.Length));
+            mockOutputWriter.Verify(x => x.WriteLine(invalidMessage), Times.Exactly(data.Length - 1));
+            Assert.AreEqual(expected, actual);
+
+
+            // Cleanup
+            Console.SetIn(new StreamReader(Console.OpenStandardInput()));
+        }
+
+        [TestMethod()]
+        public void GetIntTest_WithParamsAcceptsMin()
+        {
+            // Arrange
+            var min = -4;
+            var max = -1;
+            var expected = min;
+            var data = new int[]
+            {
+                min,
+            };
+            int actual;
+            var prompt = " > ";
+            var invalidMessage = "foo";
+            var mockOutputWriter = new Mock<IOutputWriter>();
+            mockOutputWriter.Setup(x => x.Write(prompt));
+            mockOutputWriter.Setup(x => x.WriteLine(invalidMessage));
+            var target = new ConsoleReaderWithPrompt(prompt, invalidMessage, mockOutputWriter.Object);
+
+            using (var reader = new StringReader(String.Join("\n", data) + "\n"))
+            {
+                Console.SetIn(reader);
+
+
+                // Act
+                actual = target.GetInt(min, max);
+
+            }
+
+            // Assert
+            mockOutputWriter.Verify(x => x.Write(prompt), Times.Exactly(data.Length));
+            mockOutputWriter.Verify(x => x.WriteLine(invalidMessage), Times.Exactly(data.Length - 1));
+            Assert.AreEqual(expected, actual);
+
+
+            // Cleanup
+            Console.SetIn(new StreamReader(Console.OpenStandardInput()));
+        }
+
+        [TestMethod()]
+        public void GetIntTest_WithParamsAcceptsMax()
+        {
+            // Arrange
+            var min = -4;
+            var max = -1;
+            var expected = max;
+            var data = new int[]
+            {
+                max,
+            };
+            int actual;
+            var prompt = " > ";
+            var invalidMessage = "foo";
+            var mockOutputWriter = new Mock<IOutputWriter>();
+            mockOutputWriter.Setup(x => x.Write(prompt));
+            mockOutputWriter.Setup(x => x.WriteLine(invalidMessage));
+            var target = new ConsoleReaderWithPrompt(prompt, invalidMessage, mockOutputWriter.Object);
+
+            using (var reader = new StringReader(String.Join("\n", data) + "\n"))
+            {
+                Console.SetIn(reader);
+
+
+                // Act
+                actual = target.GetInt(min, max);
+
+            }
+
+            // Assert
+            mockOutputWriter.Verify(x => x.Write(prompt), Times.Exactly(data.Length));
+            mockOutputWriter.Verify(x => x.WriteLine(invalidMessage), Times.Exactly(data.Length - 1));
+            Assert.AreEqual(expected, actual);
+
+
+            // Cleanup
+            Console.SetIn(new StreamReader(Console.OpenStandardInput()));
+        }
+
+        [TestMethod()]
+        public void GetIntTest_WithReversedParams()
+        {
+            // Arrange
+            var expected = -2;
+            var max = -4;
+            var min = -1;
+            var data = new int[]
+            {
+                -5,
+                0,
+                74,
+                expected,
+            };
+            int actual;
+            var prompt = " > ";
+            var invalidMessage = "foo";
+            var mockOutputWriter = new Mock<IOutputWriter>();
+            mockOutputWriter.Setup(x => x.Write(prompt));
+            mockOutputWriter.Setup(x => x.WriteLine(invalidMessage));
+            var target = new ConsoleReaderWithPrompt(prompt, invalidMessage, mockOutputWriter.Object);
+
+            using (var reader = new StringReader(String.Join("\n", data) + "\n"))
+            {
+                Console.SetIn(reader);
+
+
+                // Act
+                actual = target.GetInt(min, max);
+
+            }
+
+            // Assert
+            mockOutputWriter.Verify(x => x.Write(prompt), Times.Exactly(data.Length));
+            mockOutputWriter.Verify(x => x.WriteLine(invalidMessage), Times.Exactly(data.Length - 1));
             Assert.AreEqual(expected, actual);
 
 

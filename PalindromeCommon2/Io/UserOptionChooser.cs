@@ -11,10 +11,10 @@ namespace Palindromes.Io
         private const int DEFAULT_FIRST_OPTION_NUMBER = 1;
 
         private readonly IOutputWriter _writer;
-        private readonly IInputReader _reader;
+        private readonly IIntegerReader _reader;
         private readonly String _errorMsg;
 
-        public UserOptionChooser(String linePrompt, String errorMsg, IOutputWriter writer = null, IInputReader reader = null)
+        public UserOptionChooser(String linePrompt, String errorMsg, IOutputWriter writer = null, IIntegerReader reader = null)
         {
             _errorMsg = errorMsg;
 

@@ -55,7 +55,7 @@
     <Compile Include="Io\ConsoleKeypressWaiter.cs" />
     <Compile Include="Io\ConsoleReaderWithPrompt.cs" />
     <Compile Include="Io\ConsoleWriter.cs" />
-    <Compile Include="Io\IInputReader.cs" />
+    <Compile Include="Io\IIntegerReader.cs" />
     <Compile Include="Io\IOutputWriter.cs" />
     <Compile Include="Io\IUserInteractionWaiter.cs" />
     <Compile Include="Io\IUserOptionChooser.cs" />
