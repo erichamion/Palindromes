@@ -10,45 +10,37 @@ namespace PalindromeCommon
     public class PalindromeUI
     {
         private readonly Tuple<String, IValueFinderFactory>[] _strategies;
-
+        private readonly Palindromes.Io.IUserOptionChooser _optionChooser;
 
         
         public PalindromeUI(IValueFinderFactory finderFactory) : 
             this(new Tuple<String, IValueFinderFactory>[] { new Tuple<string, IValueFinderFactory>("Default strategy", finderFactory) })
         { }
 
-        public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies)
+        public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies) 
+            : this(strategies, new Palindromes.Io.UserOptionChooser())
+        { }
+
+        public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies, Palindromes.Io.IUserOptionChooser optionChooser)
         {
             _strategies = strategies;
+            _optionChooser = optionChooser;
         }
 
         public void RunUI()
         {
             int digits;
-            int strategyIndex;
+            IValueFinderFactory finderFactory;
             do
             {
-                bool isValid;
-                do
-                {
-                    Console.WriteLine("Please choose a strategy:");
-                    Console.WriteLine("  0: Quit");
-                    for (int i = 0; i < _strategies.Length; i++)
-                    {
-                        Console.WriteLine("  {0}: {1}", i + 1, _strategies[i].Item1);
-                    }
-                    Console.Write(" > ");
-                    isValid = int.TryParse(Console.ReadLine(), out strategyIndex);
-                    strategyIndex--;
-                    if (!isValid || strategyIndex < -1 || strategyIndex >= _strategies.Length)
-                    {
-                        Console.WriteLine("Please enter a number in the given range.\n");
-                    }
-                } while (!isValid || strategyIndex < -1 || strategyIndex >= _strategies.Length);
+                var quitStrategyAsList = new List<Tuple<String, IValueFinderFactory>> { new Tuple<String, IValueFinderFactory>("Quit", null) };
+                var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
+                finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 
+                    "Please enter a number in the given range.", 0);
 
-                if (strategyIndex >= 0)
+                if (finderFactory != null)
                 {
-
+                    bool isValid;
                     digits = -1;
                     do
                     {
@@ -61,14 +53,14 @@ namespace PalindromeCommon
                         }
                     } while (!isValid || digits <= 0);
 
-                    IValueFinder finder = _strategies[strategyIndex].Item2.CreateValueFinder(digits);
+                    IValueFinder finder = finderFactory.CreateValueFinder(digits);
                     Console.WriteLine(finder.FindValue());
                     Console.WriteLine("Press a key...");
                     Console.ReadKey(true);
                     Console.WriteLine();
                     
                 }
-            } while (strategyIndex >= 0);
+            } while (finderFactory != null);
         }
     }
 }
