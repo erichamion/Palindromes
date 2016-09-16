@@ -9,6 +9,10 @@ namespace PalindromeCommon
 {
     public class PalindromeUI
     {
+        private const String DEFAULT_LINE_PROMPT = " > ";
+        private const String DEFAULT_ERROR_MSG = "Please enter a number in the given range.";
+
+
         private readonly Tuple<String, IValueFinderFactory>[] _strategies;
         private readonly Palindromes.Io.IUserOptionChooser _optionChooser;
 
@@ -18,7 +22,7 @@ namespace PalindromeCommon
         { }
 
         public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies) 
-            : this(strategies, new Palindromes.Io.UserOptionChooser())
+            : this(strategies, new Palindromes.Io.UserOptionChooser(DEFAULT_LINE_PROMPT, DEFAULT_ERROR_MSG))
         { }
 
         public PalindromeUI(Tuple<String, IValueFinderFactory>[] strategies, Palindromes.Io.IUserOptionChooser optionChooser)
@@ -35,8 +39,7 @@ namespace PalindromeCommon
             {
                 var quitStrategyAsList = new List<Tuple<String, IValueFinderFactory>> { new Tuple<String, IValueFinderFactory>("Quit", null) };
                 var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
-                finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 
-                    "Please enter a number in the given range.", 0);
+                finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 0);
 
                 if (finderFactory != null)
                 {

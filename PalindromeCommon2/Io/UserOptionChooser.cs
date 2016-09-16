@@ -10,33 +10,43 @@ namespace Palindromes.Io
     {
         private const int DEFAULT_FIRST_OPTION_NUMBER = 1;
 
-        public T GetOptionFromUser<T>(string prePrompt, IList<Tuple<string, T>> optionList, string errorMsg)
+        private readonly IOutputWriter _writer;
+        private readonly IInputReader _reader;
+        private readonly String _errorMsg;
+
+        public UserOptionChooser(String linePrompt, String errorMsg, IOutputWriter writer = null, IInputReader reader = null)
         {
-            return GetOptionFromUser(prePrompt, optionList, errorMsg, DEFAULT_FIRST_OPTION_NUMBER);
+            _errorMsg = errorMsg;
+
+            _writer = (writer != null) ? writer : new ConsoleWriter();
+            _reader = (reader != null) ? reader : new ConsoleReaderWithPrompt(linePrompt, _errorMsg, _writer);
         }
 
-        public T GetOptionFromUser<T>(string prePrompt, IList<Tuple<string, T>> optionList, string errorMsg, int firstOptionNumber)
+        public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList)
         {
-            bool isValid;
+            return GetOptionFromUser(prePrompt, optionList, DEFAULT_FIRST_OPTION_NUMBER);
+        }
+
+        public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList, int firstOptionNumber)
+        {
             int chosenIndex;
             do
             {
-                Console.WriteLine(prePrompt);
+                _writer.WriteLine(prePrompt);
                 for (int i = 0; i < optionList.Count(); i++)
                 {
                     // Add the starting number to the index for display
-                    Console.WriteLine("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1);
+                    _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1));
                 }
-                Console.Write(" > ");
-                isValid = int.TryParse(Console.ReadLine(), out chosenIndex);
-
+                chosenIndex = _reader.GetInt();
+                
                 // Subtract the starting number to convert from displayed number to index
                 chosenIndex -= firstOptionNumber;
-                if (!isValid || chosenIndex < 0 || chosenIndex >= optionList.Count())
+                if (chosenIndex < 0 || chosenIndex >= optionList.Count())
                 {
-                    Console.WriteLine(errorMsg + "\n");
+                    _writer.WriteLine(_errorMsg + "\n");
                 }
-            } while (!isValid || chosenIndex < 0 || chosenIndex >= optionList.Count());
+            } while (chosenIndex < 0 || chosenIndex >= optionList.Count());
 
             return optionList[chosenIndex].Item2;
         }

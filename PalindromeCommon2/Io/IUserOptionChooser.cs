@@ -8,7 +8,7 @@ namespace Palindromes.Io
 {
     public interface IUserOptionChooser
     {
-        T GetOptionFromUser<T>(String prePrompt, IList<Tuple<String, T>> optionList, String errorMsg);
-        T GetOptionFromUser<T>(String prePrompt, IList<Tuple<String, T>> optionList, String errorMsg, int firstOptionNumber);
+        T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList);
+        T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList, int firstOptionNumber);
     }
 }

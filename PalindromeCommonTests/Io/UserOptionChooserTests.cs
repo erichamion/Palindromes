@@ -23,7 +23,8 @@ namespace Palindromes.Io.Tests
             var index = 2;
             var expected = data[index - 1].Item2;
             String actual;
-            var target = new UserOptionChooser();
+            // TODO: Mocks
+            var target = new UserOptionChooser("", "");
 
             using (StringReader reader = new StringReader(index.ToString() + "\n"))
             {
@@ -31,7 +32,7 @@ namespace Palindromes.Io.Tests
 
 
                 // Act
-                actual = target.GetOptionFromUser("", data, "");
+                actual = target.GetOptionFromUser("", data);
 
             }
             // Assert
@@ -59,7 +60,8 @@ namespace Palindromes.Io.Tests
             var startingOptionNumber = 0;
             var expected = data[index].Item2;
             String actual;
-            var target = new UserOptionChooser();
+            //TODO: Mocks
+            var target = new UserOptionChooser("", "");
 
             using (StringReader reader = new StringReader((index + startingOptionNumber).ToString() + "\n"))
             {
@@ -67,7 +69,7 @@ namespace Palindromes.Io.Tests
 
 
                 // Act
-                actual = target.GetOptionFromUser("", data, "", startingOptionNumber);
+                actual = target.GetOptionFromUser("", data, startingOptionNumber);
 
             }
             // Assert
@@ -97,7 +99,8 @@ namespace Palindromes.Io.Tests
             var inputStr = String.Join("\n", inputNumbers) + "\n";
             var expected = data[index].Item2;
             String actual;
-            var target = new UserOptionChooser();
+            // TODO: Mocks
+            var target = new UserOptionChooser("", "");
 
             using (StringReader reader = new StringReader(inputStr))
             {
@@ -105,7 +108,7 @@ namespace Palindromes.Io.Tests
 
 
                 // Act
-                actual = target.GetOptionFromUser("", data, "", startingOptionNumber);
+                actual = target.GetOptionFromUser("", data, startingOptionNumber);
 
             }
             // Assert
