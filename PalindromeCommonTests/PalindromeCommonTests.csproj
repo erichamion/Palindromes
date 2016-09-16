@@ -69,6 +69,7 @@
     <Compile Include="DigitManipulatorTests.cs" />
     <Compile Include="FirstValidValueFinderTests.cs" />
     <Compile Include="DescendingMultiples\HighestPalindromicMultipleFinderTests.cs" />
+    <Compile Include="Io\ConsoleWriterTests.cs" />
     <Compile Include="Io\UserOptionChooserTests.cs" />
     <Compile Include="Io\ConsoleReaderWithPromptTests.cs" />
     <Compile Include="IValueFinderFactoryTests.cs" />
