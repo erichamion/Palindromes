@@ -64,15 +64,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DescendingMultiplesTests\BestIndexFinderTests.cs" />
-    <Compile Include="DescendingMultiplesTests\DescendingMultipleSupplierTests.cs" />
+    <Compile Include="DescendingMultiples\BestIndexFinderTests.cs" />
+    <Compile Include="DescendingMultiples\DescendingMultipleSupplierTests.cs" />
     <Compile Include="DigitManipulatorTests.cs" />
     <Compile Include="FirstValidValueFinderTests.cs" />
-    <Compile Include="DescendingMultiplesTests\HighestPalindromicMultipleFinderTests.cs" />
-    <Compile Include="IoTests\UserOptionChooserTests.cs" />
+    <Compile Include="DescendingMultiples\HighestPalindromicMultipleFinderTests.cs" />
+    <Compile Include="Io\UserOptionChooserTests.cs" />
+    <Compile Include="Io\ConsoleReaderWithPromptTests.cs" />
     <Compile Include="IValueFinderFactoryTests.cs" />
     <Compile Include="PalindromeCheckerTests.cs" />
-    <Compile Include="DescendingMultiplesTests\DescendingMultipleValueFinderFactoryTests.cs" />
+    <Compile Include="DescendingMultiples\DescendingMultipleValueFinderFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

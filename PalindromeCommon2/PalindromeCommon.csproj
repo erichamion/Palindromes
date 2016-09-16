@@ -52,6 +52,10 @@
     <Compile Include="DigitManipulator.cs" />
     <Compile Include="FirstValidValueFinder.cs" />
     <Compile Include="IDigitManipulator.cs" />
+    <Compile Include="Io\ConsoleReaderWithPrompt.cs" />
+    <Compile Include="Io\IInputReader.cs" />
+    <Compile Include="Io\IOutputWriter.cs" />
+    <Compile Include="Io\IUserInteractionWaiter.cs" />
     <Compile Include="Io\IUserOptionChooser.cs" />
     <Compile Include="Io\UserOptionChooser.cs" />
     <Compile Include="IValueChecker.cs" />
