@@ -45,27 +45,60 @@ namespace PalindromeCommon
 
         public void RunUI()
         {
-            IValueFinderFactory finderFactory;
+            ShowIntro();
+
+            bool shouldContinue;
             do
             {
-                var quitStrategyAsList = new List<Tuple<String, IValueFinderFactory>> { new Tuple<String, IValueFinderFactory>("Quit", null) };
-                var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
-                finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 0);
-
-                if (finderFactory != null)
-                {
-                    _writer.WriteLine("How many digits are each factor (1-9)?");
-                    int digits = _reader.GetInt(1, 9);
-                     
-
-                    IValueFinder finder = finderFactory.CreateValueFinder(digits);
-                    Console.WriteLine(finder.FindValue());
-                    Console.WriteLine("Press a key...");
-                    Console.ReadKey(true);
-                    Console.WriteLine();
-                    
-                }
-            } while (finderFactory != null);
+                shouldContinue = DoLoop();
+            } while (shouldContinue);
         }
+
+        private void ShowIntro()
+        {
+            _writer.WriteLine("This program finds the largest palindrome that is a multiple of");
+            _writer.WriteLine("two N-digit numbers. For example, for N = 2, the highest palindrome");
+            _writer.WriteLine("that is a multiple of two 2-digit numbers is 9009.");
+            _writer.WriteLine("There are several ways available to calculate the result.");
+            _writer.WriteLine("");
+        }
+
+        private bool DoLoop()
+        {
+            IValueFinderFactory finderFactory = ChooseStrategy();
+            if (finderFactory == null) return false;
+
+            int digits = ChooseNumberOfDigits();
+            IValueFinder finder = finderFactory.CreateValueFinder(digits);
+            long result = finder.FindValue();
+            ShowResult(digits, result);
+
+            return true;
+        }
+
+        private void ShowResult(int digits, long result)
+        {
+            _writer.Write("The highest palindromic multiple of two " + digits.ToString() + "-digit numbers is: ");
+            _writer.WriteLine(result.ToString());
+            _writer.WriteLine("");
+        }
+
+        private int ChooseNumberOfDigits()
+        {
+            _writer.WriteLine("How many digits are each factor (1-9)?");
+            int digits = _reader.GetInt(1, 9);
+            _writer.WriteLine("");
+            return digits;
+        }
+
+        private IValueFinderFactory ChooseStrategy()
+        {
+            IValueFinderFactory finderFactory;
+            var quitStrategyAsList = new List<Tuple<String, IValueFinderFactory>> { new Tuple<String, IValueFinderFactory>("Quit", null) };
+            var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
+            finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 0);
+            return finderFactory;
+        }
+
     }
 }
