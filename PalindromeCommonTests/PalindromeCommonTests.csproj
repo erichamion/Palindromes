@@ -65,7 +65,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BruteForce\ProgramTests.cs" />
-    <Compile Include="BruteForce\SimpleHighestPalindromicMultipleFinderTests.cs" />
+    <Compile Include="BruteForce\BruteForceHighestPalindromicMultipleFinderTests.cs" />
     <Compile Include="BruteForce\UnorderedMultipleSupplierTests.cs" />
     <Compile Include="DescendingMultiples\BestIndexFinderTests.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplierTests.cs" />

@@ -13,7 +13,7 @@ namespace Palindromes.BruteForce.Tests
         [TestInitialize()]
         public override void SetTargetFactory()
         {
-            TargetFactory = new Program();
+            TargetFactory = new BruteForceValueFinderFactory();
         }
 
         [TestMethod()]

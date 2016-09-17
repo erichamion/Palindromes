@@ -11,7 +11,7 @@ using PalindromeCommon;
 namespace Palindromes.BruteForce.Tests
 {
     [TestClass()]
-    public class SimpleHighestPalindromicMultipleFinderTests
+    public class BruteForceHighestPalindromicMultipleFinderTests
     {
         [TestMethod()]
         public void UnitTest_FindValueTest()
@@ -24,7 +24,7 @@ namespace Palindromes.BruteForce.Tests
             mockMultipleGenerator.Setup(x => x.HasNext()).Returns(() => mockNextValue > 0);
             var mockPalindromeChecker = new Mock<IValueChecker<long>>();
             mockPalindromeChecker.Setup(x => x.IsValueValid(It.IsAny<long>())).Returns((long x) => x <= expected);
-            var target = new SimpleHighestPalindromicMultipleFinder(mockMultipleGenerator.Object, mockPalindromeChecker.Object);
+            var target = new BruteForceHighestPalindromicMultipleFinder(mockMultipleGenerator.Object, mockPalindromeChecker.Object);
             long actual;
 
             // Act
@@ -39,7 +39,7 @@ namespace Palindromes.BruteForce.Tests
         {
             // Arrange
             long expected = 9009;
-            var target = new SimpleHighestPalindromicMultipleFinder(10, 99);
+            var target = new BruteForceHighestPalindromicMultipleFinder(10, 99);
             long actual;
 
             // Act

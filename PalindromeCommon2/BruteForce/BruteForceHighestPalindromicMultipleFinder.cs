@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace Palindromes.BruteForce
 {
-    public class SimpleHighestPalindromicMultipleFinder : IValueFinder
+    public class BruteForceHighestPalindromicMultipleFinder : IValueFinder
     {
         private AbstractValueSupplier<long> _multiples;
         private IValueChecker<long> _palindromeChecker;
 
-        public SimpleHighestPalindromicMultipleFinder(int numDigits) : this((int)Math.Pow(10, numDigits - 1), (int)Math.Pow(10, numDigits) - 1)
+        public BruteForceHighestPalindromicMultipleFinder(int numDigits) : this((int)Math.Pow(10, numDigits - 1), (int)Math.Pow(10, numDigits) - 1)
         { }
 
-        public SimpleHighestPalindromicMultipleFinder(int min, int max)
+        public BruteForceHighestPalindromicMultipleFinder(int min, int max)
             : this(min, max, new PalindromeChecker())
         { }
 
-        public SimpleHighestPalindromicMultipleFinder(AbstractValueSupplier<long> multipleSupplier)
+        public BruteForceHighestPalindromicMultipleFinder(AbstractValueSupplier<long> multipleSupplier)
             : this(multipleSupplier, new PalindromeChecker())
         { }
 
-        public SimpleHighestPalindromicMultipleFinder(int min, int max, IValueChecker<long> palindromeChecker)
+        public BruteForceHighestPalindromicMultipleFinder(int min, int max, IValueChecker<long> palindromeChecker)
             : this(new UnorderedMultipleSupplier(min, max), palindromeChecker)
         { }
 
-        public SimpleHighestPalindromicMultipleFinder(AbstractValueSupplier<long> multipleSupplier, IValueChecker<long> palindromeChecker)
+        public BruteForceHighestPalindromicMultipleFinder(AbstractValueSupplier<long> multipleSupplier, IValueChecker<long> palindromeChecker)
         {
             _multiples = multipleSupplier;
             _palindromeChecker = palindromeChecker;
