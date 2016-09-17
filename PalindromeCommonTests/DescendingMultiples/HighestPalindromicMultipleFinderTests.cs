@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Moq;
-using PalindromeCommon;
+using Palindromes.Common;
 using Palindromes.DescendingMultiples;
 
 namespace Palindromes.DescendingMultiples.Tests

@@ -70,9 +70,10 @@
     <Compile Include="Io\UserOptionChooser.cs" />
     <Compile Include="Common\IValueChecker.cs" />
     <Compile Include="Common\IValueFinder.cs" />
-    <Compile Include="Common\IValueFinderFactory.cs" />
+    <Compile Include="Common\IValueFinderStrategy.cs" />
     <Compile Include="Common\PalindromeChecker.cs" />
     <Compile Include="Io\PalindromeUi.cs" />
+    <Compile Include="PalindromeUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ValueEnumerator.cs" />

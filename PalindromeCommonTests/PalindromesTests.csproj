@@ -83,6 +83,7 @@
     <Compile Include="Common\IValueFinderFactoryTests.cs" />
     <Compile Include="Common\PalindromeCheckerTests.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleValueFinderFactoryTests.cs" />
+    <Compile Include="PalindromeUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

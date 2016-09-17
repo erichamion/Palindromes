@@ -12,7 +12,7 @@ namespace Palindromes.Common.Tests
     [TestClass()]
     public abstract class IValueFinderFactoryTests
     {
-        protected IValueFinderFactory TargetFactory { get; set; }
+        protected IValueFinderStrategy TargetFactory { get; set; }
 
         [TestInitialize]
         public abstract void SetTargetFactory();
