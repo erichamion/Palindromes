@@ -73,10 +73,6 @@
       <Project>{1aaf69ad-2474-49cd-98b4-3b0158379afa}</Project>
       <Name>PalindromeCommonTests</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SimplePalindromes\SimplePalindromes.csproj">
-      <Project>{2511B33E-AD5E-4089-8BC0-832B42C44D17}</Project>
-      <Name>SimplePalindromes</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
