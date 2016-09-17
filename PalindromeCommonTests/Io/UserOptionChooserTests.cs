@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Palindromes.Io;
 using System.IO;
 using Moq;
+using Palindromes.Common;
 
 namespace Palindromes.Io.Tests
 {
@@ -13,17 +14,17 @@ namespace Palindromes.Io.Tests
         public void GetOptionFromUserTest_WithoutFirstOptionNumber()
         {
             // Arrange
-            var data = new Tuple<String, String>[]
+            var data = new IDescribable[]
             {
-                new Tuple<String, String>("a", "Option 1"),
-                new Tuple<String, String>("b", "Option 2"),
-                new Tuple<String, String>("c", "Option 3"),
-                new Tuple<String, String>("d", "Option 4"),
-                new Tuple<String, String>("e", "Option 5"),
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
             };
             var index = 2;
-            var expected = data[index].Item2;
-            String actual;
+            var expected = data[index];
+            IDescribable actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
             var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));
@@ -46,18 +47,18 @@ namespace Palindromes.Io.Tests
         public void GetOptionFromUserTest_WithFirstOptionNumber()
         {
             // Arrange
-            var data = new Tuple<String, String>[]
+            var data = new IDescribable[]
             {
-                new Tuple<String, String>("a", "Option 1"),
-                new Tuple<String, String>("b", "Option 2"),
-                new Tuple<String, String>("c", "Option 3"),
-                new Tuple<String, String>("d", "Option 4"),
-                new Tuple<String, String>("e", "Option 5"),
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
+                new Mock<IDescribable>().Object,
             };
             var index = 2;
             var startingOptionNumber = 27;
-            var expected = data[index].Item2;
-            String actual;
+            var expected = data[index];
+            IDescribable actual;
             var mockOutputWriter = new Mock<IOutputWriter>();
             var mockInputReader = new Mock<IIntegerReader>();
             mockOutputWriter.Setup(x => x.Write(It.IsAny<String>()));

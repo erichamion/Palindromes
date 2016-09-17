@@ -8,9 +8,8 @@ namespace Palindromes.Common
 {
     //public delegate IValueFinder ValueFinderCreator(int numDigits);
 
-    public interface IValueFinderStrategy
+    public interface IValueFinderStrategy : IDescribable
     {
-        String Description { get; }
         IValueFinder CreateValueFinder(int numDigits);
     }
 }

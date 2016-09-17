@@ -19,12 +19,12 @@ namespace Palindromes.Io
             _reader = reader;
         }
 
-        public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList)
+        public T GetOptionFromUser<T>(String prePrompt, IList<T> optionList) where T : Common.IDescribable
         {
             return GetOptionFromUser(prePrompt, optionList, DEFAULT_FIRST_OPTION_NUMBER);
         }
 
-        public T GetOptionFromUser<T>(String prePrompt, IList<Tuple<string, T>> optionList, int firstOptionNumber)
+        public T GetOptionFromUser<T>(String prePrompt, IList<T> optionList, int firstOptionNumber) where T : Common.IDescribable
         {
             int userMinOption = firstOptionNumber;
             int userMaxOption = firstOptionNumber + optionList.Count - 1;
@@ -33,7 +33,7 @@ namespace Palindromes.Io
             for (int i = 0; i < optionList.Count(); i++)
             {
                 // Add the starting number to the index for display
-                _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Item1));
+                _writer.WriteLine(String.Format("  {0}: {1}", i + firstOptionNumber, optionList[i].Description));
             }
 
             int userSelection = _reader.GetInt(userMinOption, userMaxOption);
@@ -41,7 +41,7 @@ namespace Palindromes.Io
             
             _writer.WriteLine("");
 
-            return optionList[chosenIndex].Item2;
+            return optionList[chosenIndex];
         }
     }
 }

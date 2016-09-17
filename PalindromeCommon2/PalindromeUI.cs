@@ -13,29 +13,25 @@ namespace Palindromes
         private const String DEFAULT_ERROR_MSG = "Please enter a number in the given range.";
 
 
-        private readonly Tuple<String, IValueFinderStrategy>[] _strategies;
+        private readonly IList<IValueFinderStrategy> _strategies;
         private readonly Palindromes.Io.IUserOptionChooser _optionChooser;
         private readonly Palindromes.Io.IIntegerReader _reader;
         private readonly Palindromes.Io.IOutputWriter _writer;
 
         
-        public PalindromeUi(IValueFinderStrategy finderFactory) : 
-            this(new Tuple<String, IValueFinderStrategy>[] { new Tuple<string, IValueFinderStrategy>("Default strategy", finderFactory) })
-        { }
-
-        public PalindromeUi(Tuple<String, IValueFinderStrategy>[] strategies)
+        public PalindromeUi(IList<IValueFinderStrategy> strategies)
             : this(strategies, new Palindromes.Io.ConsoleWriter())
         { }
 
-        public PalindromeUi(Tuple<String, IValueFinderStrategy>[] strategies, Palindromes.Io.IOutputWriter writer)
+        public PalindromeUi(IList<IValueFinderStrategy> strategies, Palindromes.Io.IOutputWriter writer)
             : this(strategies, writer, new Palindromes.Io.ConsoleReaderWithPrompt(DEFAULT_LINE_PROMPT, DEFAULT_ERROR_MSG, writer))
         { }
 
-        public PalindromeUi(Tuple<String, IValueFinderStrategy>[] strategies, Palindromes.Io.IOutputWriter writer, Palindromes.Io.IIntegerReader reader) 
+        public PalindromeUi(IList<IValueFinderStrategy> strategies, Palindromes.Io.IOutputWriter writer, Palindromes.Io.IIntegerReader reader) 
             : this(strategies, writer, reader, new Palindromes.Io.UserOptionChooser(writer, reader))
         { }
 
-        public PalindromeUi(Tuple<String, IValueFinderStrategy>[] strategies, Palindromes.Io.IOutputWriter writer, Palindromes.Io.IIntegerReader reader, Palindromes.Io.IUserOptionChooser optionChooser)
+        public PalindromeUi(IList<IValueFinderStrategy> strategies, Palindromes.Io.IOutputWriter writer, Palindromes.Io.IIntegerReader reader, Palindromes.Io.IUserOptionChooser optionChooser)
         {
             _strategies = strategies;
             _writer = writer;
@@ -94,7 +90,7 @@ namespace Palindromes
         private IValueFinderStrategy ChooseStrategy()
         {
             IValueFinderStrategy finderFactory;
-            var quitStrategyAsList = new List<Tuple<String, IValueFinderStrategy>> { new Tuple<String, IValueFinderStrategy>("Quit", null) };
+            var quitStrategyAsList = new List<IValueFinderStrategy> { null };
             var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
             finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 0);
             return finderFactory;

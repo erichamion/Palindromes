@@ -48,6 +48,7 @@
     <Compile Include="BruteForce\BruteForceValueFinderFactory.cs" />
     <Compile Include="BruteForce\BruteForceHighestPalindromicMultipleFinder.cs" />
     <Compile Include="BruteForce\UnorderedMultipleSupplier.cs" />
+    <Compile Include="Common\IDescribable.cs" />
     <Compile Include="DescendingMultiples\BestIndexFinder.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\IBestIndexFinder.cs" />
