@@ -12,9 +12,10 @@ namespace PalindromeCommon
         {
             Tuple<String, IValueFinderFactory>[] strategies =
             {
-                new Tuple<string, IValueFinderFactory>("Generate multiples in descending order, and test for palindromicity",
+                new Tuple<string, IValueFinderFactory>("Generate multiples in descending order, and test for palindromicity.",
                                                         new Palindromes.DescendingMultiples.DescendingMultipleValueFinderFactory()),
-
+                new Tuple<string, IValueFinderFactory>("Generate palindromes in descending order, and test for factorability.",
+                                                        new Palindromes.DescendingPalindromes.DescendingPalindromeValueFinderFactory()),
             };
 
             PalindromeUI ui = new PalindromeUI(strategies);
