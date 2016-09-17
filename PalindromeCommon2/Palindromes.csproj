@@ -7,8 +7,8 @@
     <ProjectGuid>{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PalindromeCommon</RootNamespace>
-    <AssemblyName>PalindromeCommon</AssemblyName>
+    <RootNamespace>Palindromes</RootNamespace>
+    <AssemblyName>Palindromes</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

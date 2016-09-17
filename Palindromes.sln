@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeCommon", "PalindromeCommon2\PalindromeCommon.csproj", "{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindromes", "PalindromeCommon2\Palindromes.csproj", "{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeCommonTests", "PalindromeCommonTests\PalindromeCommonTests.csproj", "{1AAF69AD-2474-49CD-98B4-3B0158379AFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromesTests", "PalindromeCommonTests\PalindromesTests.csproj", "{1AAF69AD-2474-49CD-98B4-3B0158379AFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
