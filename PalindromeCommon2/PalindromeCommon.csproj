@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractValueSupplier.cs" />
+    <Compile Include="BruteForce\Program.cs" />
+    <Compile Include="BruteForce\SimpleHighestPalindromicMultipleFinder.cs" />
+    <Compile Include="BruteForce\UnorderedMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\BestIndexFinder.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\IBestIndexFinder.cs" />
