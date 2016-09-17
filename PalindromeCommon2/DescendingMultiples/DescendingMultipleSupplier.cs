@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PalindromeCommon;
+using Palindromes.Common;
 
 namespace Palindromes.DescendingMultiples
 {

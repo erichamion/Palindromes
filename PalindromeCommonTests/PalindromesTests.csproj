@@ -74,14 +74,14 @@
     <Compile Include="DescendingPalindromes\MultipleOfNDigitsCheckerTests.cs" />
     <Compile Include="DescendingPalindromes\NumberMirrorerTests.cs" />
     <Compile Include="DescendingPalindromes\DescendingPalindromeValueFinderFactoryTests.cs" />
-    <Compile Include="DigitManipulatorTests.cs" />
-    <Compile Include="FirstValidValueFinderTests.cs" />
+    <Compile Include="Common\DigitManipulatorTests.cs" />
+    <Compile Include="Common\FirstValidValueFinderTests.cs" />
     <Compile Include="DescendingMultiples\HighestPalindromicMultipleFinderTests.cs" />
     <Compile Include="Io\ConsoleWriterTests.cs" />
     <Compile Include="Io\UserOptionChooserTests.cs" />
     <Compile Include="Io\ConsoleReaderWithPromptTests.cs" />
-    <Compile Include="IValueFinderFactoryTests.cs" />
-    <Compile Include="PalindromeCheckerTests.cs" />
+    <Compile Include="Common\IValueFinderFactoryTests.cs" />
+    <Compile Include="Common\PalindromeCheckerTests.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleValueFinderFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

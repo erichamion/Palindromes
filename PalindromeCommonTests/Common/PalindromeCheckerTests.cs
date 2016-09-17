@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Moq;
-using PalindromeCommon;
+using Palindromes.Common;
 
-namespace PalindromeCommon.Tests
+namespace Palindromes.Common.Tests
 {
     [TestClass()]
     public class PalindromeCheckerTests

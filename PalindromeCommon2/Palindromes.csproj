@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractValueSupplier.cs" />
+    <Compile Include="Common\AbstractValueSupplier.cs" />
     <Compile Include="BruteForce\BruteForceValueFinderFactory.cs" />
     <Compile Include="BruteForce\BruteForceHighestPalindromicMultipleFinder.cs" />
     <Compile Include="BruteForce\UnorderedMultipleSupplier.cs" />
@@ -59,23 +59,23 @@
     <Compile Include="DescendingPalindromes\MultipleOfNDigitsChecker.cs" />
     <Compile Include="DescendingPalindromes\NumberMirrorer.cs" />
     <Compile Include="DescendingPalindromes\DescendingPalindromeValueFinderFactory.cs" />
-    <Compile Include="DigitManipulator.cs" />
-    <Compile Include="FirstValidValueFinder.cs" />
-    <Compile Include="IDigitManipulator.cs" />
+    <Compile Include="Common\DigitManipulator.cs" />
+    <Compile Include="Common\FirstValidValueFinder.cs" />
+    <Compile Include="Common\IDigitManipulator.cs" />
     <Compile Include="Io\ConsoleReaderWithPrompt.cs" />
     <Compile Include="Io\ConsoleWriter.cs" />
     <Compile Include="Io\IIntegerReader.cs" />
     <Compile Include="Io\IOutputWriter.cs" />
     <Compile Include="Io\IUserOptionChooser.cs" />
     <Compile Include="Io\UserOptionChooser.cs" />
-    <Compile Include="IValueChecker.cs" />
-    <Compile Include="IValueFinder.cs" />
-    <Compile Include="IValueFinderFactory.cs" />
-    <Compile Include="PalindromeChecker.cs" />
-    <Compile Include="PalindromeUI.cs" />
+    <Compile Include="Common\IValueChecker.cs" />
+    <Compile Include="Common\IValueFinder.cs" />
+    <Compile Include="Common\IValueFinderFactory.cs" />
+    <Compile Include="Common\PalindromeChecker.cs" />
+    <Compile Include="Io\PalindromeUi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValueEnumerator.cs" />
+    <Compile Include="Common\ValueEnumerator.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

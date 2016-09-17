@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Palindromes.BruteForce.Tests
 {
     [TestClass()]
-    public class ProgramTests : PalindromeCommon.Tests.IValueFinderFactoryTests
+    public class ProgramTests : Common.Tests.IValueFinderFactoryTests
     {
         [TestInitialize()]
         public override void SetTargetFactory()

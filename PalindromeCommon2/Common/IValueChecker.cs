@@ -1,4 +1,4 @@
-﻿namespace PalindromeCommon
+﻿namespace Palindromes.Common
 {
     public interface IValueChecker<T>
     {

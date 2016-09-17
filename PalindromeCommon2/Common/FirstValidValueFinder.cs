@@ -1,11 +1,10 @@
-﻿using PalindromeCommon;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PalindromeCommon
+namespace Palindromes.Common
 {
     /// <summary>
     /// This was originally called HighestPalindromicMultipleFinder, and it was used only in

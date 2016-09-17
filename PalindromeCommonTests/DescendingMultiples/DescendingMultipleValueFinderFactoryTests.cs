@@ -10,7 +10,7 @@ using Palindromes.DescendingMultiples;
 namespace Palindromes.DescendingMultiples.Tests
 {
     [TestClass()]
-    public class DescendingMultipleValueFinderFactoryTests : PalindromeCommon.Tests.IValueFinderFactoryTests
+    public class DescendingMultipleValueFinderFactoryTests : Common.Tests.IValueFinderFactoryTests
     {
         [TestInitialize()]
         public override void SetTargetFactory()

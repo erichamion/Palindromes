@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Palindromes.DescendingPalindromes.Tests
 {
     [TestClass()]
-    public class DescendingPalindromeValueFinderFactoryTests : PalindromeCommon.Tests.IValueFinderFactoryTests
+    public class DescendingPalindromeValueFinderFactoryTests : Common.Tests.IValueFinderFactoryTests
     {
         [TestInitialize()]
         public override void SetTargetFactory()

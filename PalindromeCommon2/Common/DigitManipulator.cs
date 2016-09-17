@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PalindromeCommon
+namespace Palindromes.Common
 {
     public class DigitManipulator : IDigitManipulator
     {

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace PalindromeCommon
+namespace Palindromes.Common
 {
     public abstract class AbstractValueSupplier<T> : IEnumerable<T>
     {

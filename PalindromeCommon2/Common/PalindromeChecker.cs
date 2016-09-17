@@ -1,11 +1,10 @@
-﻿using PalindromeCommon;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PalindromeCommon
+namespace Palindromes.Common
 {
     public class PalindromeChecker : IValueChecker<long>
     {
