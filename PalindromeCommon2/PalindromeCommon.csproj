@@ -49,6 +49,13 @@
     <Compile Include="DescendingMultiples\DescendingMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\IBestIndexFinder.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleValueFinderFactory.cs" />
+    <Compile Include="DescendingPalindromes\AbstractDigitListSupplier.cs" />
+    <Compile Include="DescendingPalindromes\DescendingDigitListSupplier.cs" />
+    <Compile Include="DescendingPalindromes\DescendingPalindromeSupplier.cs" />
+    <Compile Include="DescendingPalindromes\INumberMirrorer.cs" />
+    <Compile Include="DescendingPalindromes\MultipleOfNDigitsChecker.cs" />
+    <Compile Include="DescendingPalindromes\NumberMirrorer.cs" />
+    <Compile Include="DescendingPalindromes\Program.cs" />
     <Compile Include="DigitManipulator.cs" />
     <Compile Include="FirstValidValueFinder.cs" />
     <Compile Include="IDigitManipulator.cs" />

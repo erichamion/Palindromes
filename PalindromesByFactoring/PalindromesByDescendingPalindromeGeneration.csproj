@@ -55,12 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PalindromeCommon2\PalindromeCommon.csproj">
-      <Project>{e6db82c9-7e9c-439b-a726-49a28fb87eaa}</Project>
-      <Name>PalindromeCommon</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

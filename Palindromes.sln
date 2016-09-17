@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePalindromesTests", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromesByDescendingPalindromeGeneration", "PalindromesByFactoring\PalindromesByDescendingPalindromeGeneration.csproj", "{2A13AE85-D6E2-4216-8B63-F281D9575169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromesByDescendingPalindromeGenerationTests", "PalindromesByFactoringTests\PalindromesByDescendingPalindromeGenerationTests.csproj", "{1192CDAE-AC59-44F7-855C-80151C8F574C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeCommon", "PalindromeCommon2\PalindromeCommon.csproj", "{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeCommonTests", "PalindromeCommonTests\PalindromeCommonTests.csproj", "{1AAF69AD-2474-49CD-98B4-3B0158379AFA}"
@@ -33,10 +31,6 @@ Global
 		{2A13AE85-D6E2-4216-8B63-F281D9575169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A13AE85-D6E2-4216-8B63-F281D9575169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A13AE85-D6E2-4216-8B63-F281D9575169}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1192CDAE-AC59-44F7-855C-80151C8F574C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1192CDAE-AC59-44F7-855C-80151C8F574C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1192CDAE-AC59-44F7-855C-80151C8F574C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1192CDAE-AC59-44F7-855C-80151C8F574C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6DB82C9-7E9C-439B-A726-49A28FB87EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU

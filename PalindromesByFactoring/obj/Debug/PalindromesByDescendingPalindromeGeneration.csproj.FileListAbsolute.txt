@@ -9,8 +9,5 @@ c:\users\erich\onedrive\documents\visual studio 2015\Projects\Palindromes\Palind
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.exe.config
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.exe
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\bin\Debug\PalindromesByDescendingPalindromeGeneration.pdb
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\bin\Debug\PalindromeCommon.exe
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\bin\Debug\PalindromeCommon.pdb
-C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.csprojResolveAssemblyReference.cache
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.exe
 C:\Users\erich\OneDrive\Documents\Visual Studio 2015\Projects\Training_and_Evaluation\ProjectEuler4\PalindromesByFactoring\obj\Debug\PalindromesByDescendingPalindromeGeneration.pdb
