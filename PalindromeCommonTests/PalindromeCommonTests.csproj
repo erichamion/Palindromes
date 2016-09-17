@@ -70,7 +70,7 @@
     <Compile Include="DescendingPalindromes\DescendingPalindromeSupplierTests.cs" />
     <Compile Include="DescendingPalindromes\MultipleOfNDigitsCheckerTests.cs" />
     <Compile Include="DescendingPalindromes\NumberMirrorerTests.cs" />
-    <Compile Include="DescendingPalindromes\ProgramTests.cs" />
+    <Compile Include="DescendingPalindromes\DescendingPalindromeValueFinderFactoryTests.cs" />
     <Compile Include="DigitManipulatorTests.cs" />
     <Compile Include="FirstValidValueFinderTests.cs" />
     <Compile Include="DescendingMultiples\HighestPalindromicMultipleFinderTests.cs" />
