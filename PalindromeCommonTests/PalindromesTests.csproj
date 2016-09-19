@@ -67,6 +67,7 @@
     <Compile Include="BruteForce\ProgramTests.cs" />
     <Compile Include="BruteForce\BruteForceHighestPalindromicMultipleFinderTests.cs" />
     <Compile Include="BruteForce\UnorderedMultipleSupplierTests.cs" />
+    <Compile Include="Common\NullValueFinderStrategyTests.cs" />
     <Compile Include="DescendingMultiples\BestIndexFinderTests.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplierTests.cs" />
     <Compile Include="DescendingPalindromes\DescendingDigitListSupplierTests.cs" />

@@ -49,6 +49,7 @@
     <Compile Include="BruteForce\BruteForceHighestPalindromicMultipleFinder.cs" />
     <Compile Include="BruteForce\UnorderedMultipleSupplier.cs" />
     <Compile Include="Common\IDescribable.cs" />
+    <Compile Include="Common\NullValueFinderStrategy.cs" />
     <Compile Include="DescendingMultiples\BestIndexFinder.cs" />
     <Compile Include="DescendingMultiples\DescendingMultipleSupplier.cs" />
     <Compile Include="DescendingMultiples\IBestIndexFinder.cs" />
@@ -74,7 +75,6 @@
     <Compile Include="Common\IValueFinderStrategy.cs" />
     <Compile Include="Common\PalindromeChecker.cs" />
     <Compile Include="Io\PalindromeUi.cs" />
-    <Compile Include="PalindromeUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ValueEnumerator.cs" />

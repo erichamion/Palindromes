@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Palindromes.Common
 {
-    //public delegate IValueFinder ValueFinderCreator(int numDigits);
+    public delegate IValueFinder ValueFinderFactory(int numDigits);
 
     public interface IValueFinderStrategy : IDescribable
     {
-        IValueFinder CreateValueFinder(int numDigits);
+        ValueFinderFactory CreateValueFinder { get; }
     }
 }

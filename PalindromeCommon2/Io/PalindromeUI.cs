@@ -61,11 +61,11 @@ namespace Palindromes.Io
 
         private bool DoLoop()
         {
-            IValueFinderStrategy finderFactory = ChooseStrategy();
+            ValueFinderFactory finderFactory = ChooseStrategy();
             if (finderFactory == null) return false;
 
             int digits = ChooseNumberOfDigits();
-            IValueFinder finder = finderFactory.CreateValueFinder(digits);
+            IValueFinder finder = finderFactory.Invoke(digits);
             long result = finder.FindValue();
             ShowResult(digits, result);
 
@@ -87,13 +87,13 @@ namespace Palindromes.Io
             return digits;
         }
 
-        private IValueFinderStrategy ChooseStrategy()
+        private ValueFinderFactory ChooseStrategy()
         {
             IValueFinderStrategy finderFactory;
-            var quitStrategyAsList = new List<IValueFinderStrategy> { null };
+            var quitStrategyAsList = new List<IValueFinderStrategy> { new NullValueFinderStrategy("Quit") };
             var strategiesIncludingQuit = quitStrategyAsList.Concat(_strategies).ToList();
             finderFactory = _optionChooser.GetOptionFromUser("Please choose a strategy:", strategiesIncludingQuit, 0);
-            return finderFactory;
+            return finderFactory.CreateValueFinder;
         }
 
     }
